@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'Macterla';
+  src: url('./fonts/Macterla-OVaO8.otf');
+}
+
 .App {
   text-align: center;
+  font-family: 'Macterla';
 }
 
 .App-logo {

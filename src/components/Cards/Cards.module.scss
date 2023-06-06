@@ -1,0 +1,18 @@
+.card {
+    border-radius: 20px 20px 20px 20px ;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.368);
+}
+
+.card:hover {
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.368);
+    border: solid 1px black
+}
+
+.card:active {
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.368);
+}
+
+.img {
+    border-radius: 20px 20px 0 0 ;
+}
+
