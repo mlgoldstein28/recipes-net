@@ -1,6 +1,7 @@
 import Nationality from './categories/Nationality';
 import MainIngredient from './categories/MainIngredient';
 import Type from './categories/Type';
+import styles from './Filters.module.scss';
 import { Link } from 'react-router-dom';
 
 const Filters = ({setActionCat, setAction}) => {
@@ -11,13 +12,13 @@ const Filters = ({setActionCat, setAction}) => {
           <div className="m-3">
             <a href="/" className="text-decoration-none">Clear Filters</a>
           </div>
-          <div className="accordion" id="accordionFilter">
+          <div className="accordion mb-3" id="accordionFilter">
             <Nationality setActionCat={setActionCat} setAction={setAction}/>
             <MainIngredient setActionCat={setActionCat} setAction={setAction} />
             <Type setActionCat={setActionCat} setAction={setAction} />
           </div>
           <div>
-            <Link to="/random"><button className="btn btn-outline-success mt-3">Random Recipe</button></Link>
+            <Link to="/random"><button className={`btn btn-outline-success mt-3 ${styles.respRandomButton}`}>Random Recipe</button></Link>
           </div>
         </div>
     )

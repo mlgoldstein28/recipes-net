@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import Directions from './Directions';
+import styles from './MealDetails.module.scss';
 
 const MealDetails = () => {
     
@@ -36,10 +36,10 @@ const MealDetails = () => {
         console.log(strMeal)
         
         return (
-            <div className="container row m-3">
-                <div className="col-lg-3 col-12 text-center mt-3">
-                    <h2 className="fw-bold">{strMeal}</h2>
-                    <p className="fw-bold">{strCategory} | {strArea}</p>
+            <div className={`container row m-3 m-auto ${styles.detailsContainer}`}>
+                <div className="col-lg-3 col-12 text-center mt-3"> 
+                    <h2 className="fw-bold text-center">{strMeal}</h2>
+                    <p className="fw-bold text-center">{strCategory} | {strArea}</p>
                     <br />
                     <p className="fs-4 fw-bold text-left">Ingredients: </p>
                     <ul className="mt-2 m-2 w-75 list-group m-auto" style={{ textAlign: 'left', listStyle: ''}}>
@@ -69,12 +69,12 @@ const MealDetails = () => {
                         <a href={strYouTube}><button className="btn btn-outline-primary m-auto fw-bold">Watch Video Here</button></a>
                     </div>
                     {strSource && (
-                        <div className="text-center mt-3">
+                        <div className="text-center mt-3 pb-3">
                         <a href={strSource}><button className="btn btn-outline-info m-auto fw-bold">Full Recipe Here</button></a>
                     </div>)
                     }
                 </div> 
-                <div className="col-lg-9 col-12 text-center mt-3">
+                <div className="col-lg-9 col-12 mt-5">
                     <img className="img-fluid rounded" src={strMealThumb} alt='' />
                 </div>
             </div>

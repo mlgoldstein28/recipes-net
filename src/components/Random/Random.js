@@ -18,16 +18,16 @@ const Random = () => {
 
     if (meals) {
     display = meals.map((x) => 
-        {let { idMeal, strMeal, strArea, strCategory, strMealThumb, strInstructions, strSource, strYoutube, strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10, strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15, strIngredient16, strIngredient17, strIngredient18, strIngredient19, strIngredient20  } = x;
+        {let { idMeal, strMeal, strArea, strCategory, strMealThumb, strSource, strYoutube, strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10, strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15, strIngredient16, strIngredient17, strIngredient18, strIngredient19, strIngredient20  } = x;
 
     return (
         <div key={idMeal} className={`${styles.font} container-fluid h-75`}>
             <h2 className="text-center mt-3 fs-1">The Recipe of the Moment</h2>
             <hr />
-            <div className="row">
+            <h3 className="fw-bold fs-2 text-center">{strMeal}</h3>
+                    <h4 className="text-center">{strCategory} | {strArea}</h4>
+            <div className={`row ${styles.randomContainer}`}>
                 <div className="col-lg-4 col-12 mt-5 ml-2 text-center">
-                    <h3 className="fw-bold fs-2">{strMeal}</h3>
-                    <h4 className="">{strCategory} | {strArea}</h4>
                     <p className="fs-5 fw-bold mt-5">Ingredients Needed: </p>
                     <ul className="list-group mb-3 w-75 m-auto" style={{listStyle: 'none'}}>
                         {
