@@ -13,6 +13,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
 
 function App() {
+  document.body.style.overflowX = "hidden";
   return (
     <BrowserRouter>
       <div className="App">
