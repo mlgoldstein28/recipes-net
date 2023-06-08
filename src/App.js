@@ -2,6 +2,7 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import React, { useState, useEffect } from 'react';
+import styles from './App.module.scss';
 import Random from './components/Random/Random';
 import Cards from './components/Cards/Cards';
 import Navbar from './components/Navbar/Navbar';
@@ -13,9 +14,9 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
 
 function App() {
-  document.body.style.overflowX = "hidden";
   return (
     <BrowserRouter>
+      <div className={styles.bodySubstitute}>
       <div className="App">
         <Navbar />
       </div>
@@ -24,6 +25,7 @@ function App() {
         <Route path='/random' element={<Random />} />
         <Route path='/:idMeal' element={<MealDetails  />} />
       </Routes>
+      </div>
     </BrowserRouter>
   )
 }
