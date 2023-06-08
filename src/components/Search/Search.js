@@ -19,7 +19,7 @@ const Search = ({setAction, setActionCat}) => {
 
      return (
         <div className="">
-            <div className="input-group w-75 m-auto mb-3">
+            <div className="input-group w-75 m-auto">
                 <input type="text" 
                     id="message"
                     name="message"
