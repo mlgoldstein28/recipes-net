@@ -5,7 +5,7 @@
 
 .card:hover {
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.368);
-    border: solid 1px black
+    transform: scale(1.04);
 }
 
 .card:active {
@@ -13,6 +13,26 @@
 }
 
 .img {
-    border-radius: 20px 20px 0 0 ;
+    border-radius: 20px 20px 0 0;
+}
+
+.mealName {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 720px) {
+    .mealName {
+        font-size: .64rem;
+    }
+}
+
+@media  screen and (max-width: 575px) {
+    .mealName {
+        font-size: 1rem
+    }
 }
 
