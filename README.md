@@ -9,3 +9,5 @@ There are three exclusive filter categories: Nationality, Ingredient, and Type.
 **Pagination** was implemented and 20 meals are displayed per page. 
 Selecting a meal will bring you to the MealDetails page, which lists the ingredients 
 and also displays a Video and Full Recipe link (if available).
+
+ ***This site is mobile responsive***. 
