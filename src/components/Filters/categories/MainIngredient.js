@@ -19,7 +19,7 @@ const MainIngredient = ({ setActionCat, setAction}) => {
                 className="accordion-collapse collapse"
                 aria-labelledby="headingTwo"
                 data-bs-parent="#accordionFilter">
-                    <div className="accordion-body d-flex flex-wrap gap-2">
+                    <div className="accordion-body d-flex flex-column flex-wrap gap-2">
                        { 
                        ingredients.map((item, index) => (
                             <FilterBTN 

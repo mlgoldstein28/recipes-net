@@ -20,7 +20,7 @@ const Type = ({setAction, setActionCat}) => {
                     aria-labelledby="headingThree"
                     data-bs-parent="#accordionFilter"
                 >
-                    <div className="accordion-body d-flex flex-wrap gap-2">
+                    <div className="accordion-body d-flex flex-column flex-wrap gap-2">
                         {
                             types.map((item, index) => (
                                 <FilterBTN 

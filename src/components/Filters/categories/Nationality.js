@@ -24,7 +24,7 @@ const Nationality = ({setActionCat, setAction, meals}) => {
                     aria-labelledby="headingOne"
                     data-bs-parent="#accordionFilter"
                 >
-                    <div className="accordion-body d-flex flex-wrap gap-2">
+                    <div className="accordion-body d-flex flex-wrap flex-column gap-2">
                         {
                             nationalities.map((item, index) => (
                                 <FilterBTN

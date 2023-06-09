@@ -72,12 +72,12 @@ const Home = () => {
       <div className="container">
         <h2 className="m-3">Find Your Recipe</h2>
         <div className="row">
-          <div className="col-lg-3 col-md-3 col-sm-4 col-5">
+          <div className="col-lg-3 col-md-4 col-sm-5 col-6">
           <Filters setActionCat={setActionCat}
                     setAction={setAction}
                     meals={meals}/>
           </div>
-          <div className="col-lg-8 col-md-9 col-sm-8 col-7">
+          <div className="col-lg-9 col-md-8 col-sm-7 col-6">
             <div className="row">
             {meals && 
               <Cards meals={currentRecords}
