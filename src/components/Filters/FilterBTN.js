@@ -8,11 +8,11 @@ const FilterBTN = ({name, index, input, inputCat, setActionCat, task, meals}) =>
                 
                 .x:checked + label {
                     background-color: #0b5ed7;
-                    color: white
+                    color: white;
                 }
             `}
         </style>
-        <div className="form-check">
+        <div className="d-flex flex-column">
             <input className="form-check-input x" type="radio" id={`${name}-${index}`} name={name} />
             <label for={`${name}-${index}`} 
                     onClick={(x) => {task(inputCat + input); setActionCat('filter');
