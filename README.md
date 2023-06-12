@@ -1,6 +1,6 @@
 # Recipes
 
-Recipes, built through **ReactJS** with **MealDB’s API**, is a culinary site that lets you search recipes by Nationality, Ingredient, Type or Search. **Bootstrap and SASS** were used to implement the UI and UX.
+Recipes, built through **ReactJS** with **MealDB’s API**, is a culinary site that lets you search recipes by Nationality, Ingredient, Type or Search. **Bootstrap and SCSS** were used to implement the UI and UX.
 
 The Navbar contains a link to a Random Recipes page which displays a recipe out of MealDB’s database of recipes. 
 This page contains a link to the Full Recipe and a Video (if available).
